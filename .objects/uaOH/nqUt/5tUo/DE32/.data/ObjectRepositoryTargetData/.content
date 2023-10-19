@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="3f6qCZGX2kK3a0umO8TGFw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://survey.alchemer.com/s3/7136017/Suggest-a-Title" DesignTimeRectangle="460, 955, 33, 26" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' innertext='Yes' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' innertext='Yes' check:text='unchecked' /&gt;" Guid="03fcc885-33d2-42a1-afc9-0ac39219f525" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Title' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="429, 879, 752, 25" ElementType="Text" FriendlyName="'If the'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='P' innertext='If the title is purchased, would you like us to place a hold on this title for you? ' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='P' innertext='If the title is purchased, would you like us to place a hold on this title for you? ' check:text='If the title is purchased, would you like us to place a hold on this title for you?' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a9c6f43d2b98fe6045019bf7f975de5f.png" xmlns="">0XP8c8BAh5UC92Padc5ULwg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

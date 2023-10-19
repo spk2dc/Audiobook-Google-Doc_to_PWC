@@ -1,0 +1,16 @@
+﻿{
+  "Name": "hold",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "DE32nl8MhkeGqNsvGZ1LiA",
+  "Reference": "8-66tnRfhUCcrIpGhQ19Qw/DE32nl8MhkeGqNsvGZ1LiA",
+  "ParentRef": "8-66tnRfhUCcrIpGhQ19Qw/5tUolXEhxkyJXqVa8o9Mpg",
+  "Created": "2023-10-19T21:19:52.5838937Z",
+  "Updated": "2023-10-19T21:22:07.5287951Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

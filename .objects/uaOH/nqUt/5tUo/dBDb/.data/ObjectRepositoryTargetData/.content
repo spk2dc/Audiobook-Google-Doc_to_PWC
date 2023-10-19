@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="b6XiE0bCRECA1VFNRbYGJQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://survey.alchemer.com/s3/7136017/Suggest-a-Title" DesignTimeRectangle="426, 909, 263, 45" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT sgE-7136017-1-7-e…'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl name='sgE-7136017-1-7' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='text' /&gt;" Guid="f75c2535-bdcb-4ed3-b1d3-e21a7fb393ea" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Title' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="396, 875, 84, 28" ElementType="Text" FriendlyName="'4. Title.'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' idx='4' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' check:text='4. Title. *This question is required.' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2ad8270aadf78b03a9b86af644679d21.png" xmlns="">0JRwOml_vN0aJ_pUQr2N3bA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

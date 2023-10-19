@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="idtnAhyOckCAtYOaUQn-dQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://survey.alchemer.com/s3/7136017/Suggest-a-Title" DesignTimeRectangle="817, 1118, 96, 51" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' aaname='Submit' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' aaname='Submit' type='submit' check:text='Submit' /&gt;" Guid="9854925b-b637-4c45-8c80-9ee2d9cb5474" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Title' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0fd11ee065c5714c38189ec2b532d3c4.png" xmlns="">07obk1XISYUCqyxOFYtZnkg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

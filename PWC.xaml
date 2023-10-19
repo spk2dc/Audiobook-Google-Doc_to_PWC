@@ -1,0 +1,243 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="WPL" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="list" Type="InArgument(s:String[])" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>658.4,2747.1999999999994</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>WPL_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="PWC" sap:VirtualizedContainerService.HintSize="668.8,2682.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="bookAuthor" />
+      <Variable x:TypeArguments="x:String" Name="bookTitle" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="606.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;PWC list(0): &quot;+list(0)]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Site" sap:VirtualizedContainerService.HintSize="606.4,2388" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="3a89db22-bbb9-4ba5-bafc-66599babb7c7" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572.8,2171.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[list.Count() &gt;1]" DisplayName="While" sap:VirtualizedContainerService.HintSize="510.4,2056" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476.8,1919.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[bookTitle]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[list.ElementAt(list.Count()).Split(" by ")(0)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[bookAuthor]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[list.ElementAt(list.Count()).Split(" by ")(1).Split(" - ")(0)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'card #'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_27" ScopeIdentifier="3a89db22-bbb9-4ba5-bafc-66599babb7c7" Text="23159012431992" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://survey.alchemer.com/s3/7136017/Suggest-a-Title" ContentHash="tOpIdCzDO0ym4pdqgTKqyg" DesignTimeRectangle="426, 552, 263, 45" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'card #'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' aaname=' &amp;#x9;&amp;#x9;1. Your library card number. *This question is required.&amp;#x9;' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' aaname=' &amp;#x9;&amp;#x9;1. Your library card number. *This question is required.&amp;#x9;' /&gt;" Guid="99e898b1-5bc1-4dee-b757-01cdf5b704d9" InformativeScreenshot="19a998691d08790acc94539ed7067b1d.png" Reference="8-66tnRfhUCcrIpGhQ19Qw/NSQyarIlU0mXUr0OEbBc1A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Title' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="396, 518, 264, 28" ElementType="Text" FriendlyName="'card #'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' innertext=' &amp;#x9;&amp;#x9;1. Your library card number. *This question is required.&amp;#x9;' aaname=' &amp;#x9;&amp;#x9; Your library card number. &amp;#x9;' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' aaname=' &amp;#x9;&amp;#x9; Your library card number. &amp;#x9;' check:text='1. Your library card number. *This question is required.' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQwAAAAgCAYAAADnlUZqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAnUSURBVHhe7ZxbaxtHFMf7MUKthxqEXqqHQl1CQkGQKLQQDKambVI/1JBgk7rYBScQC+KGuEbUFohKRghBbBOzYDaNHQyixsYY9OQXP/WhHyAf5PScuezO7s6udh35knAefrSdHc3lzJn/nLm4n1z7dAgYhmHSwILBMExqWDAYhkkNCwbDMKlhwWAYJjUsGAzDpIYFg2GY1LBgMAyTGhYMhmFS01cwRqqHsNPbhUnLt1Tca8Nm718s4wQW7lm+e0zA/B7lO4VGpWz5fgk83cX2/Au1pzptAha61EbDHpE8zCCYfBWy8weH8pXuOpSs368AhRK8u3MfegXLtxgSBSP307qa7O8zcAW4/deJmFQ7r1ehaM0zBMXfSZiS81w4LBiXBgvGBTBIwRj+uQ2tIxq0AQxcfhYW96mcU6g9uRH9fv051ERdhzA3Gvp2maQRAxaMc4EF4/yYL96FdyOfw7XPvoL/7tyFnc+GYG3kPvxXzFvzm0QFI38XxuuH4JBQHPVg82AwA5f71QWXytzfgtG8+a0Ao20ZgWzWJoz0KwALxqXBgnFe5GHn6/sisojw9Vcwb/2NT1Qw1ATY2XdhovwgGoKfmTJMOqei7IAw6DOOvXbQsKVHMLPRA/eY6keOT6HjtGG8XPDzIPGOhVEL/e7Vcz9N9O0EFqYrsCTOS5D9LkyNmb8ziIhBwpak8gNMdlBoVXvd/UNYwrSczufljau/AF/80oba3qnfZyqnm7acf+DPv+nfT2HxoZFXowS7szIW/RagCKVnLrRERChx3rgwORa0e678GOadHjheFIocnUCrsww3zQXhntzW1ioPYG5bbU2Pe9jGL+X3fMhue2hbrCudYKjxwDEe/n4Zqmg73RYqZ+r7YiB/Fl8ReXGy3x5bhqU3J3KxM9p3rYj+if3XY+XudWHmJ9NGvmCMT9O4ynyeH5d0Ph9tU9/nLfZEdNvGf3NhU+V1nFW4aeTpjyEcKYRCExWMJ1vQqj+GL0QjLRPkfSitQosMgVuPGWGwMsy8pv9G5zeNXdJbFDTuxjrMVJZhroPOSb89wm2LkTe7YOCExLKd11tYbhOWcEBGAr8zyCAY7hE6Kw5wtboMUy/QhiIyC4ljQv0jf6gzHBSaRSqD+rzWVQ5xCtVfDfvElHMdHYgc22nP+nkFBfjxJU2mHswnbvlQ1F+pSdftwsKLZZipd6Xdj3HM9G9Hm9AS7UKHXmuKtk5Vt6AhbIO2ePnYFzglGMI+3V2Yq6zCwkYbflT+JQ+6yeHVOG+QqBxCS/hFP7/TkxIjYSxjU5ehfSW0xc0sGAdYLtn4rYvt1m3DdBT5Brbb1elYnxCUI1f1i1Btw36LMRHjZJRxtAsT13VeOi9sQ0eNdadDNkU7OSrvHgqXIRqibVQuik9rbRVt78LSs34LQRCxLTGiizTbESLx0HPggoHIWxfpVMNq1SMH91fQGzC1LQ1Xexq8LRme3pKO8KbpTfLsgoFpb9vxImGSQTB2jrowaa4a3rkNRhDaMWLrfwDzb3FCBRxOktN93kjRj3wFqiS0B7jts6UbdrORU4LjOsuBg+fcQ9kG92VFjNPtGq2CKGK/mSsqgn1eUlvYCZ2mBMPWt8KzrujH5l8PAhFUsdKVE7Cv3+nxwDLqwTJGVnoivVO966VlFgxMoz4Pe/luqAUOCR3Oj7ZJaEnYdZrRtnD/1AG/s/ZIpY3B3BvKG1o4Ka+yhZ/Xb1v/aDEGddj57k4J1oxII83h54ULxrW83uacgEMTKuxI3zShowakYP5OoAcMV8rvZNpZBIMGMJg3hgyCYQ6opqAco/W7OujNWr8gWz9kJBHclmghaDyzHDgbTGxQ39BpI9ffst8urnQBIbIQGQ8tGChC5qTxxxIjF2OllaDYpjo70+NhKUPd8G3W/Qgvu2BEt3elulz1G5XgxM7hxKb0qK8YC4aH6p8Wdm0jrD9oI0teRLaNxCWcNz0UYXgCgQJyZSMMQq9YUpFDq9ST5EmlB0wPzFkEw5vA/cggGH4eA+W0FE2ZeePrL0Dh1g8w+kSG+FXnUITE9JvU/VC29bclejtic1yT7GOdGylD6eFzDJ+bsLjRhVaX6gmVoSZDdJv0WEY9dE4QSJfEj6uJajMtOuFveiukbY9kF4yoeEr/s0zWOF+xHnoWYNKh8nHL9A3+t/qt47Tl9i5AE6piXHxRlG2zCe35cymC4Q2QrVxlPHNlMBmEYFgnt404JzDrSyrTWDn65c2NLSvH8HFxD91Y25URV+p+PJJbIb0i5X07RFcvkwxjTQeVei+uocO87S2ovQ2VoWwQHU/VLuuEyigYtjLCtkeyC0Y0rycY4SgszlcS+yfL0T6djF9nOtucD1dPMAYVYVxXB6ypJ5qFOCcw60sqM7zax+XNq9UWI65GdRZKt274k/sM/fh2jWwkw+mcyGs5b4iQdqx1xIKCtt2E0e/KUPC2lHqbYZQRKxgDjDDeVzAsNo7LOxjBCG7H9HbGPG9JggXDRJ9hWA/o4s4wLOGZ3vZckGDYIiJ98BY+w4jUr9+oRPb5yFn6MdoWNiShEpPbFrJH0FeZlsmgQmj3ALc1t7S4dWEydIhpPXuIFQx/0oiwPPAtrd+dRTDS+crABIPKCNspfDht1B93huHub3ljyIIRIMUtiXE74J1OB1ZQ43rwggSDrskCtyT6apjStYPG1a8dJvwsHkN/eXouv3mHwH37MQbztDXoHorr3ej5gR3vlgRtFmiHvg4XdteigBMv8JagADfVDVhgUsYKxhAUsB+2+ooqvb/fZROMLL4yOMGgvpu3JAW4XZcLiW8TnfcEFn82346gTVf0raK8oaL0D1YwZMMzTECPJMFAkt5hHGN0YV49acdAYzfqqzD1Yh2q4opSvVK9KMEgDnqwRG8oqi50xKQKiV5s/b5z6fcIM/VdWQa9BaB/mpMiRT/09bV0QnueKP7k0W8P6B2GfAvS8678vD33vnyr4dmcxks8njImVIJg2Orz31AQ/SaFsltKwcjiK4MUDEK+EYl/W+H/3ZblHUZoMYpr29nnY3qupmAQpdnQqzc0pOWlJ1E0X9IhzvY6jJdU2y9IMMRLT+NlKr38m58O/dVtUv3Y34Vt/0UhOXFthR7Q6dA9+p4jsR96X27dQydBLz2VWKm2RF96lmGcHnRZxkZfJXtXuImCQWBZK1qUqCyazLMwEzMpgmQUDCStrwxMMLBt49Pr0NAvZ2NebxLRl57KroFI7koLBvPBos6Czvy4h2EssGB8lOj/pUC/txcMkw0WjI+JWxVY2NiFqvojr8DfdDDMAGDB+KioQFXtf53tZuBQjWEGAQsGwzCpYcFgGCY1LBgMw6SGBYNhmJQMwf9JS5H6ltps7AAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'title'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_25" ScopeIdentifier="3a89db22-bbb9-4ba5-bafc-66599babb7c7" Text="[bookTitle]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://survey.alchemer.com/s3/7136017/Suggest-a-Title" ContentHash="b6XiE0bCRECA1VFNRbYGJQ" DesignTimeRectangle="426, 909, 263, 45" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'title'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl name='sgE-7136017-1-7' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='text' /&gt;" Guid="f75c2535-bdcb-4ed3-b1d3-e21a7fb393ea" InformativeScreenshot="2ad8270aadf78b03a9b86af644679d21.png" Reference="8-66tnRfhUCcrIpGhQ19Qw/dBDbEyADR0qKBtZCDJNN8g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Title' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="396, 875, 84, 28" ElementType="Text" FriendlyName="'title'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' idx='4' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' check:text='4. Title. *This question is required.' /&gt;" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'author'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_26" ScopeIdentifier="3a89db22-bbb9-4ba5-bafc-66599babb7c7" Text="[bookAuthor]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://survey.alchemer.com/s3/7136017/Suggest-a-Title" ContentHash="gV6bMRdts0yJCjx2FykKaw" DesignTimeRectangle="426, 869, 263, 45" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'author'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='text' aaname=' &amp;#x9;&amp;#x9;5. Author&amp;apos;s first and last name. *This question is required.&amp;#x9;' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='text' aaname=' &amp;#x9;&amp;#x9;5. Author&amp;apos;s first and last name. *This question is required.&amp;#x9;' /&gt;" Guid="55e50767-f443-48a6-b9b1-023095cef1a9" InformativeScreenshot="cc2ae47f548ce675b44b8525b6517152.png" Reference="8-66tnRfhUCcrIpGhQ19Qw/DyGGAg3-IU2ZEcFbHutUTQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Title' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="396, 835, 288, 28" ElementType="Text" FriendlyName="'author'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9; Author&amp;apos;s first and last name. &amp;#x9;' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9; Author&amp;apos;s first and last name. &amp;#x9;' tag='LABEL' check:text='5. Author&amp;apos;s first and last name. *This question is required.' /&gt;" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'format'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3a89db22-bbb9-4ba5-bafc-66599babb7c7" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://survey.alchemer.com/s3/7136017/Suggest-a-Title" ContentHash="m3OjufUpDkaTuen9EbCbbw" DesignTimeRectangle="460, 697, 226, 26" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'format'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' innertext='Downloadable Audiobook' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' innertext='Downloadable Audiobook' check:text='unchecked' /&gt;" Guid="a2c33868-e39a-4dde-8766-0d64f31bf175" InformativeScreenshot="cbf83c46beebd0b8aeb5723e011e4532.png" Reference="8-66tnRfhUCcrIpGhQ19Qw/JaW4y50AmkKHpdMUNXueFg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Title' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="396, 561, 925, 28" FriendlyName="'format'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='LEGEND' visibleinnertext='9. Select requested format(s).' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='LEGEND' visibleinnertext='9. Select requested format(s).' check:text='9. Select requested format(s).' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'hold'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3a89db22-bbb9-4ba5-bafc-66599babb7c7" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://survey.alchemer.com/s3/7136017/Suggest-a-Title" ContentHash="3f6qCZGX2kK3a0umO8TGFw" DesignTimeRectangle="460, 955, 33, 26" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'hold'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' innertext='Yes' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' innertext='Yes' check:text='unchecked' /&gt;" Guid="03fcc885-33d2-42a1-afc9-0ac39219f525" InformativeScreenshot="a9c6f43d2b98fe6045019bf7f975de5f.png" Reference="8-66tnRfhUCcrIpGhQ19Qw/DE32nl8MhkeGqNsvGZ1LiA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Title' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="429, 879, 752, 25" ElementType="Text" FriendlyName="'hold'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='P' innertext='If the title is purchased, would you like us to place a hold on this title for you? ' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='P' innertext='If the title is purchased, would you like us to place a hold on this title for you? ' check:text='If the title is purchased, would you like us to place a hold on this title for you?' /&gt;" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_29" ScopeIdentifier="3a89db22-bbb9-4ba5-bafc-66599babb7c7" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://survey.alchemer.com/s3/7136017/Suggest-a-Title" ContentHash="8WGEcq0FYUmyIFXgGa5Xbw" DesignTimeRectangle="426, 790, 263, 45" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'email'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='text' idx='3' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='text' /&gt;" Guid="c73aeb0a-aa8a-43a7-b1df-a42ede532c28" InformativeScreenshot="c33f45fec6144f46d660bf89d4097e24.png" Reference="8-66tnRfhUCcrIpGhQ19Qw/SVHhEpopUESHy1nPmJrqtw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Title' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="396, 756, 97, 28" ElementType="Text" FriendlyName="'email'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9; Email. &amp;#x9;' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl aaname=' &amp;#x9;&amp;#x9; Email. &amp;#x9;' tag='LABEL' check:text='3. Email. *This question is required.' /&gt;" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'submit'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3a89db22-bbb9-4ba5-bafc-66599babb7c7" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://survey.alchemer.com/s3/7136017/Suggest-a-Title" ContentHash="idtnAhyOckCAtYOaUQn-dQ" DesignTimeRectangle="817, 1118, 96, 51" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'submit'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' aaname='Submit' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' aaname='Submit' type='submit' check:text='Submit' /&gt;" Guid="9854925b-b637-4c45-8c80-9ee2d9cb5474" InformativeScreenshot="0fd11ee065c5714c38189ec2b532d3c4.png" Reference="8-66tnRfhUCcrIpGhQ19Qw/wHZRprdveUiqph4xDhB1gA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Title' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+            </ui:InterruptibleWhile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="yTTIDMzopU-V669fNZ5LkQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVDSURBVFhH1VftU5RVFOdP6FP28iFmZFLRaB3difdAoQTdgjGaFkKHYhEIiMFAxeS9WckAhUwRp2WUQTFK3NgQaBBhhyTQdVNgpAQKECbGYPrkt9P9nZ77zMI+gBg105n5zdy997z8zrnn3ueux/9K/hys0wkUClwTmBUgBRhjDms6RX31RDj1FKgQmLV/dZjKDkbT7h1+ZPsihj4/HEF7o4N4DmvQUXRXh4hwFDV3xzJ61ZJFJ48YKM6wlS6VRdPaFzyZgKXEQD7rvWjf274UFaaj+Df96JY1l2ADW8XNk4lwkDl+4zQdSIog/83rOVB4wCYOtGnjS2Q+EEvVpSbaHqynrL2BPA/0N8TToWQDzf50FhXJVNytTIRh4W89VZSdGM5ZA4nGUMrIy6fzfYPUPTlNNNPDwPhMRy/FpmQwSZBFlc6VxtBDxymQKFTcPp4IA90fzppZBEepkXVw2Osc2DY+x2ibeEiPxr5lAs4HY+o8iISGBjMJ2NnrEgi+4FNxv7QIxacEHOacWA5+NCucgzcOjatBJKZ+ttGjyS7qmJiZNw9d2KBqIPJrZy6q4IBvJcziIpQy718z8z6isbC/WsGBwdsXaGripuYaKvHK1s10JCWU+2K699jj9YNQGk2LD2cjdLm5/rJmAMDR8Qn19DVorgFphUfVLawviweBUSWMtgiFEDQNSgejSMNOTccSINB/vVxzTQJVQCWRjNKQIUo4dxGLFpx3SSDvzDlNpxJ3ru5nElprEofMxXwisBX32vNAwKKEcxex6HA2pTIBbMFiey8xZE1YlsAJ6/dcATRz0YcGbkYlnLvM3a1lp2CcYXpD06ErBmypyxIAUE15NyCGEm6+CGY63FzIHIx3RL01z0nr/RF13DI2xUDwH+2n1N+u63IM6H392Seg3I7ud4IkIPfLlUD78ABni453tn/MVdICCN34oZZ1XUlkZydyYvC7FIEQLOJOR8kWVkDruKEqrpWRWHgydhvf4ezhe9kK4PO6sAIdQ/2cuavT+Pp8qhseppoBB+2xFc9bQwVcie2K3MZ+lyQAQYPIIwgj6QDZ48jBaWVvFxV0NtKGogDa11pOW77cRTENOUwChEAW+l3ONtUePuW1vmgTQgQzR3VRjPrplR8fOMTewum75hwO7l0d6oZKp511JQnY4hiCAKpad8y49DEUi5buiznMFM2IiwhZd97tZoeAT6ReMziAKkgC9ltXmIC8iJAUfCOGEs5dxCJfxXjlgDW+aCCAPUWX93adJC8fL83ggKExnZy2TNaFTZPjNl/FOAHY/2WvYohQGC3JimYjsEYVcKRwFJERmnPDp0GaBNAPjSOTXAHYFFcdZzKoKB4n8K2EWVyEEn+OERzNiKfXpY4earlipXZrE5Wakslb/yJ5n3h1XvCXSwOppDSBLufnMk4X5HES6P7rtcYVfY75QVKZv0e9PII2elPemmep5Om/cXDNcxSxxYvWfaAnn1xfMqb7kzUplqa762nsuxpq/shEr+nW8VYikeaaVG4++FbCLC1CUX2SwQEeJwXvbaPa5Dg6vzOMPlvrRTXBfiohBJe/0555ngL1PnyKQP7rSuPKnmRShEHhzM0qdiCvWmSUHhFAF7OTmEhveS6/Cdv2m5hcSdx27niUHPqwVRrviV/Gmbi5RtqzVBIAHhfI7pvj71Pz2VRuMsy56vzSmvHPnuVShIMo3F6T9mK612xSA2D8e18FN5drYMxDd1X+mEgRjvCfsEIQmX3QY+bshltSCGMAY8xhLPTkXzNPxXz1RCHy3/85/ffEw+MvF9tCRbAEtRIAAAAASUVORK5CYII=" InformativeScreenshot="af320beb24ca87723ef199b722fa5d3a.jpg" Reference="8-66tnRfhUCcrIpGhQ19Qw/5tUolXEhxkyJXqVa8o9Mpg" Selector="&lt;html app='chrome.exe' title='Suggest a Title' /&gt;" Title="Suggest a Title" Url="https://www.pwcva.gov/department/library/suggest-title" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

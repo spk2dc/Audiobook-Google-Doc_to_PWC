@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="76iGqk589UurLTLQkWZ6hA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://survey.alchemer.com/s3/7136017/Suggest-a-Title" DesignTimeRectangle="396, 1003, 925, 28" DesignTimeScaleFactor="1.25" FriendlyName="'10. Who'" FullSelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='LEGEND' visibleinnertext='10. Who would enjoy this title?' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://survey.alchemer.com/s3/7136017/Suggest-a-Title' tag='IFRAME' /&gt;&lt;webctrl tag='LEGEND' visibleinnertext='10. Who would enjoy this title?' check:text='10. Who would enjoy this title?' /&gt;" Guid="1282c811-44c1-42c6-ba91-6715af17520a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Title' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f76c641e670b71429f4dd3c7cc83a2ae.png" xmlns="">0b94gclK79kuNqVcVsCDH8g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

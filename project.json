@@ -1,5 +1,5 @@
 {
-  "name": "Audiobook Google Doc to PWC",
+  "name": "PWC",
   "projectId": "83a87d7c-0e5f-4671-b6ba-70550f4aa26e",
   "description": "Request audiobooks on a Google Doc list from PWC library",
   "main": "Main.xaml",
@@ -45,7 +45,6 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": true,
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
